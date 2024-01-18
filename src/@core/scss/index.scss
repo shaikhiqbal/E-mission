@@ -1,0 +1,62 @@
+// Override Bootstrap variables
+$primary: #231f20;
+$secondary: #eea404;
+$accent: #0eb5ad; // Corrected from $assent
+$cerulean: #1c6c82;
+$dark: #000;
+$light: #fff;
+// Add more variable overrides as needed
+
+// Define variables for font families
+$barlow-condensed: "Barlow Condensed", sans-serif;
+$fira-sans: "Fira Sans", sans-serif;
+
+// Define styles for titles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $barlow-condensed;
+  font-weight: bold;
+  // Adjust font size according to your design
+}
+
+// Define styles for subtitles, small quotes, and taglines
+.subtitle,
+.quote,
+.tagline {
+  font-family: $barlow-condensed;
+  font-weight: lighter;
+  text-transform: uppercase;
+  // Adjust font size according to your design
+}
+
+// Define styles for large bodies of text
+body {
+  font-family: $fira-sans;
+  font-weight: normal;
+  background-color: #121212 !important; // Dark background color
+  color: $light; // Light text color, adjust as needed
+  box-sizing: border-box;
+}
+
+@import "bootstrap/scss/bootstrap"; // Import Bootstrap SCSS directly
+// Your custom styles go here
+
+.divider {
+  border-top: 1px solid $cerulean; // Adjust the color according to your design
+  margin: 20px 0; // Adjust the margin as needed
+}
+ol, ul, dl{
+  margin: 0;
+  padding: 0;
+}
+
+// Responsive styles for the divider
+@media (max-width: 767px) {
+  .divider {
+    margin: 10px 0; // Adjust the margin for smaller screens
+  }
+}
