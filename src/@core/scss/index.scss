@@ -1,3 +1,6 @@
+
+
+
 // Override Bootstrap variables
 $primary: #231f20;
 $secondary: #eea404;
@@ -11,6 +14,10 @@ $light: #fff;
 $barlow-condensed: "Barlow Condensed", sans-serif;
 $fira-sans: "Fira Sans", sans-serif;
 
+*{
+  --accent-color:$accent
+}
+
 // Define styles for titles
 h1,
 h2,
@@ -23,6 +30,9 @@ h6 {
   // Adjust font size according to your design
 }
 
+h1{
+  font-size: 4rem !important;
+}
 // Define styles for subtitles, small quotes, and taglines
 .subtitle,
 .quote,
@@ -30,6 +40,7 @@ h6 {
   font-family: $barlow-condensed;
   font-weight: lighter;
   text-transform: uppercase;
+  font-size: 1.5rem;
   // Adjust font size according to your design
 }
 
@@ -38,7 +49,7 @@ body {
   font-family: $fira-sans;
   font-weight: normal;
   background-color: #121212 !important; // Dark background color
-  color: $light; // Light text color, adjust as needed
+  color: $light !important; // Light text color, adjust as needed
   box-sizing: border-box;
 }
 
@@ -46,17 +57,22 @@ body {
 // Your custom styles go here
 
 .divider {
-  border-top: 1px solid $cerulean; // Adjust the color according to your design
-  margin: 20px 0; // Adjust the margin as needed
+ // Adjust the color according to your design
+  margin: 3rem 0; // Adjust the margin as needed
 }
 ol, ul, dl{
   margin: 0;
   padding: 0;
 }
 
+
+
 // Responsive styles for the divider
 @media (max-width: 767px) {
   .divider {
     margin: 10px 0; // Adjust the margin for smaller screens
+  }
+  h1{
+    font-size: 2.5rem !important;
   }
 }

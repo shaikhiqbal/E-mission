@@ -10,6 +10,7 @@ const styles = {
     height: "60px",
     width: "100%",
     boxShadow: "inset 0 0 0.5px 1px hsla(0, 0%,  100%, 0.075)",
+    zIndex:"1",
   },
   iconSpaner: {
     // width: "20px",
